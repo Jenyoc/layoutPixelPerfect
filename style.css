@@ -1,0 +1,1061 @@
+@font-face {
+  font-family: PTSansRegular;
+  src: url(src/fonts/PTSans-Regular.woff);
+}
+
+@font-face {
+  font-family: PTSansItalic;
+  src: url(src/fonts/PTSans-Italic.woff);
+}
+
+@font-face {
+  font-family: PTSansBold;
+  src: url(src/fonts/PTSans-bold.woff)
+}
+
+@font-face {
+  font-family: BebasNeue;
+  src: url(src/fonts/BebasNeue.woff)
+}
+
+body{
+  background-color: black !important;
+}
+
+a{
+  color: white !important;
+}
+
+button:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+button:hover{
+  cursor: pointer !important;
+}
+
+
+
+.container-fluid{
+  box-sizing: border-box !important;
+  padding: 0 !important;
+  margin: 0 auto !important;
+}
+
+.fullSize{
+  width: 1700px !important; height: 4155px !important;
+  color: gray;
+}
+
+.row{
+  margin: 0 !important;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+  background: #0e0e0e;
+  width: 100%; height: 63px;
+  align-items: center;
+}
+
+.headerContentBox, .navigatorText, .sliderContent, .servicesContent, .collectionTop, .collectionItemsBox,
+.brandContainer, .sayContainer, .footerContainer{
+  width: 1400px;
+  justify-content: space-between;
+}
+
+.headerLeft{
+  display: flex;
+  font-family: PTSansItalic;
+  width: 320px;
+  font-size: 14px;
+  color: #767676;
+  align-items: center;
+}
+
+.headerRight{
+  justify-content: space-between;
+  width: 210px;
+  align-items: center;
+}
+
+.buyCnt{
+  display: inline-flex;
+  color: white;
+  background-color: #b6907e;
+  width: 20px; height: 20px;
+  box-sizing: border-box;
+  font-size: 11px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.searchIco{
+  width: 21px; height: 21px;
+}
+
+.cartIco{
+  width: 23px; height: 21px;
+}
+
+.userIco{
+  width: 21px; height: 25px;
+  position: relative;
+}
+
+.hrCenter{
+  justify-content: space-between;
+  width: 60px;
+  align-items: center;
+}
+
+.navigator{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navigatorText{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  height: 150px;
+  z-index: 2;
+}
+
+.navLeft{
+  display: flex;
+  width: 235px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ALWLogo{
+  font-family: BebasNeue;
+  font-size: 30px;
+}
+
+.americanLogoWatch{
+  font-family: PTSansItalic;
+  font-size: 14px;
+  color: #767676 !important;
+}
+
+.navCenter{
+  display: flex;
+  width: 570px;
+  justify-content: space-between;
+  font-family: BebasNeue;
+  align-items: center;
+  font-size: 18px;
+}
+
+.watches{
+  color: #977869 !important;
+  border-bottom: 2px solid #977869;
+  height: 25px;
+}
+
+.watches:hover, .ALWLogo:hover{
+  text-decoration: none;
+}
+
+.shape{
+  width: 24px; height: 24px;
+}
+
+.navRight{
+  display: flex;
+  font-family: BebasNeue;
+  align-items: center;
+  font-size: 24px;
+  width: 190px;
+  justify-content: space-between;
+}
+
+.main{
+  display: flex;
+  width: 100%; height: auto;
+  overflow: hidden;
+  flex-direction: column;
+  background: black;
+}
+
+.slider{
+  display: flex;
+  width: 100%; height: 845px;
+  align-items: flex-end;
+  justify-content: flex-end;
+  overflow: hidden;
+  font-family: BebasNeue;
+}
+
+
+.picOne{
+  position: absolute;
+  width: 1034px; height: 755px;
+  transition: 1s;
+  margin-bottom: -35px !important;
+}
+
+.picTwo{
+  opacity: 0;
+  position: absolute;
+  width: 1563px; height: 845px;
+  transition: 1s;
+}
+
+.opacity0{
+  opacity: 0 !important;
+  transition: 1s;
+}
+
+.opacity1{
+  opacity: 1 !important;
+  transition: 1s;
+}
+
+.sliderContentBox{
+  display: flex;
+  width:100%; height: 845px;
+  z-index: 1;
+  flex-direction: column;
+  text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+
+.gradientToRight{
+  background: linear-gradient(to right, black, rgba(0, 0, 0, 0.71), transparent);
+  transition: 1s;
+}
+
+.gradientToBottom{
+  background: linear-gradient(to bottom right, black, black, rgba(0, 0, 0, 0.71), transparent);
+  transition: 1s;
+}
+
+.sliderContent{
+  display: flex;
+  flex-direction: column;
+  height: 510px;
+}
+
+.sliderText{
+  font-size: 82px;
+  color: white;
+  line-height: 1.2;
+}
+
+.sliderBtnBox button{
+  font-size: 18px;
+  font-family: BebasNeue;
+  text-transform: uppercase;
+  color: #977869;
+  background: transparent;
+  border: 2px solid #977869;
+}
+
+.sliderBtnFirst{
+  width: 180px; height: 60px;
+  margin-right: 15px;
+}
+
+.sliderBtnSecond{
+  width: 260px; height: 60px;
+  margin-left: 15px;
+}
+
+.indicators{
+  width: 100px;
+  justify-content: space-between;
+}
+
+#btnActive{
+  background-color: #977869 !important;
+}
+
+.indicators button{
+  border-radius: 6px;
+  width: 12px; height: 12px;
+  background-color: #695246;
+  border: none;
+  padding: 0;
+}
+
+.services{
+  width: 100%; height:900px;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.servicePic{
+  width: 1267px; height: 900px;
+  position: absolute;
+  z-index: -1;
+}
+
+.servicesContentBox{
+  width: 100%; height: 100%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesContent{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+  color: #767676;
+  font-family: PTSansRegular;
+  font-size: 24px;
+  flex-direction: column;
+}
+
+.secondP{
+  color: #767676 !important;
+}
+
+.bgGd{
+  background: linear-gradient(to left, black, black, rgba(0, 0, 0, 0.71), transparent);
+}
+
+.serviceHeader{
+  font-family: BebasNeue;
+  font-size: 48px;
+  color: white;
+  z-index: 5;
+}
+
+.textBlack{
+  color: black;
+  transition: 1s;
+  padding-left: 30px;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 420px; width: 700px;
+  transition: 1s;
+}
+
+.backgroundWhite{
+  background-color: white;
+  transition: 1s;
+}
+
+
+.btnContainer{
+  display: flex;
+  width: 700px;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+  transition: 1s;
+}
+
+.servicesBtnBox{
+  width: 85px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  z-index: 2;
+  flex-direction: row;
+}
+
+.servicesBtnBox span:hover{
+  cursor: pointer;
+}
+
+.servicesTextFirst{
+  transition: 1s;
+}
+
+.servicesTextSecond{
+  z-index: 1;
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+  width: 700px;
+}
+
+.bgWhite{
+  width: 700px;
+  position: absolute;
+  height: 900px;
+  z-index: -1;
+  background: white;
+}
+
+.arrow:active{
+  color: #6c757d !important;
+}
+
+.arrow::selection, button::selection, img::selection {
+  background: transparent !important;
+}
+
+.arrow::-moz-selection, button::-moz-selection, img::-moz-selection {
+  background: transparent !important;
+}
+
+.collection{
+  display: flex;
+  height: 900px; width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection>section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 735px; width: 100%;
+  color: white;
+  font-family: BebasNeue;
+}
+
+.collectionTop{
+  align-items: center;
+}
+
+.ctLeft{
+  font-size: 48px;
+}
+
+.ctRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+  width: 200px; height: 20px;
+  font-family: PTSansBold;
+  letter-spacing: 1.2px;
+  align-items: center;
+}
+
+.ctRight>section{
+  display: flex;
+  width: 65px;
+  height: 20px;
+  align-items: flex-end;
+}
+
+.latest{
+  display: flex;
+  align-items: center;
+  height: 20px;
+  position: absolute;
+}
+
+.ctRight>section>div{
+  width:100%;height: 50%;
+  background: #b6907e;
+  margin-bottom: 0;
+}
+
+.popular{
+  display: flex;
+  align-items: center;
+}
+
+.collectionMain{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.collectionItemsBox{
+  display: flex;
+  flex-direction: row;
+}
+
+.leftItemBox, .centerItemBox, .rightItemBox{
+  height: 634px; width:420px;
+  border: #1c1c20 1px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.colArrow:hover{
+  cursor: pointer;
+}
+
+.colArrow:focus, .colArrow:active, .colArrow{
+  background: none !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.leftItemBox>div, .centerItemBox>div, .rightItemBox>div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.collectionItemsBox h1{
+  font-size: 30px;
+}
+
+.price{
+  font-family: PTSansBold;
+  font-size: 24px;
+  color: #82675a;
+}
+
+.colArrow{
+  color: #1c1c20;
+  font-size: 7rem;
+  width: 120px;
+  text-align: center;
+}
+
+.brand{
+  display: flex;
+  width: 100%;
+  height: 280px;
+  justify-content: center;
+  align-content: center;
+}
+
+.brandContainer{
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  z-index: 0;
+}
+
+.brandContainer img{
+  filter: grayscale(100%) invert(100%);
+  opacity: 0.2;
+}
+
+.say{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; height:720px;
+}
+
+.sayContainer{
+  display: flex;
+  flex-direction: column;
+  height: 635px;
+  align-items: center;
+}
+
+.ssNavBtn{
+  border-radius: 6px;
+  width: 12px; height: 12px;
+  background-color: #695246;
+  border: none;
+  padding: 0;
+}
+
+.sayTop{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 48px;
+  font-family: BebasNeue;
+  color: white;
+}
+
+.sayCenter{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.scLeft, .scRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.sayBottom{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saySliderNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px;
+}
+
+.photoBox{
+  display: flex;
+  width: 120px; height: 120px;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.sayCenter h2{
+  display: flex;
+  font-size: 36px;
+  font-family: BebasNeue;
+  color: white;
+  height: 80px;
+  align-items: center;
+}
+
+.sayCenter p{
+  width: 400px;
+  font-size: 18px;
+  font-family: PTSansRegular;
+}
+
+.photoBox img{
+  align-self: center;
+  height: 100%;
+  width: auto;
+}
+
+.footer{
+  display: flex;
+  width: 100%; height: 460px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+}
+
+.footerContainer>section{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerLeft{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.flTop{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.fltLeft{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fltRight{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 250px;
+  align-content: center;
+  font-family: BebasNeue;
+  font-size: 18px;
+  line-height: 3;
+}
+
+.menu{
+  font-size: 30px;
+  color: white;
+}
+
+.fltRight>span{
+  display: flex;
+  flex-direction: column;
+}
+
+.sec{
+  height: 70px;
+  align-self: center;
+}
+
+.footerRight{
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.footerBottom{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #494949;
+}
+
+.fltLeft h3{
+  font-family: BebasNeue;
+  font-size: 36px;
+  color: white;
+}
+
+.fltLeft p{
+  font-size: 14px;
+  font-family: PTSansItalic;
+}
+
+.footerRight{
+  height: 100%;
+}
+
+.frTop{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-end;
+}
+
+.frTop h3{
+  font-size: 30px;
+  color: white;
+  font-family: BebasNeue;
+}
+
+.frTop span{
+  display: flex;
+  font-family: BebasNeue;
+  font-size: 18px;
+  width: 153px; height: 50px;
+  background-color: #b6907e;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.3);
+
+}
+
+.frTop>div{
+  width: 708px; height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.frTop input{
+  width: 455px; height: 50px;
+  border: 1px solid #494949;
+  background-color: transparent;
+  color: #494949;
+  padding-left: 30px;
+  font-family: PTSansRegular;
+  font-size: 18px;
+}
+
+.fbRight{
+  width: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.fbLeft{
+  font-size: 16px;
+  font-family: PTSansRegular;
+}
+
+.searchCont input{
+  width: 90%;
+  border: 1px solid;
+  font-family: PTSansItalic;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  padding-left: 15px;
+  color: black;
+}
+
+.loginCont{
+  z-index: 3;
+  float: right;
+  margin: 0 30px;
+}
+
+.footer span:hover, .collection span:hover{
+  cursor: pointer;
+}
+
+#signin{
+  display: flex;
+}
+
+.searchIco:hover, .userIco:hover{
+  cursor: pointer;
+}
+
+@media (max-width: 1699px) {
+  .fullSize{
+    width: 100% !important;
+    padding: 25px;
+  }
+  .services{
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .main{
+    z-index: 1;
+  }
+
+  .bgWhite{
+    height: 0;
+  }
+
+  .servicesTextSecond{
+  }
+
+
+
+  .headerContentBox, .navigatorText, .sliderContent, .servicesContent, .collectionTop, .collectionItemsBox,
+  .brandContainer, .sayContainer, .footerContainer{
+    width: 100%;
+    padding: 25px;
+  }
+  .colArrow{
+    font-size: 2rem;
+
+    width: auto;
+  }
+
+  .frTop>div{
+    width: 400px;
+  }
+  .frTop input{
+    width: 300px;
+  }
+  .frTop span{
+    width: 100px;
+  }
+
+  .leftItemBox, .centerItemBox, .rightItemBox{
+    width: 30%;
+  }
+
+  .collectionMain{
+    width: 100%;
+    padding: 15px;
+  }
+  @media (max-width: 1300px) {
+    .fullSize{
+      height: auto !important;
+    }
+
+    .services{
+      height: auto;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .servicesContentBox{
+      width: 100%;
+      height: auto;
+    }
+
+    .servicePic{
+      width: 100%;
+      height: auto;
+      z-index: -333;
+    }
+
+    .collection{
+      z-index: 1;
+      background: black;
+    }
+    @media (max-width: 1170px) {
+
+      .scLeft p, .scLeft h2, .scRight p, .scRight h2, .sayCenter, .scLeft>div, .scRight>div{
+        width: auto;
+      }
+
+      .scRight, .scLeft{
+        flex-direction: column;
+        padding: 15px;
+      }
+      .loginCont{
+        position: absolute;
+      }
+      @media (max-width: 1000px) {
+        .leftItemBox, .centerItemBox, .rightItemBox{
+          width: auto;
+          border: none;
+          height: auto;
+        }
+        @media (max-width: 900px){
+          .collectionItemsBox img{
+            width: 90%; height: auto;
+          }
+          .main, .slider, .services, .collection, .footer, .footerContainer{
+            height: auto;
+          }
+          .brandContainer img{
+            width: 100px; height: auto;
+          }
+          .footerContainer section{
+            flex-direction: column;
+          }
+
+          .serviceHeader, .servicesTextSecond, .footerLeft, .textContainer{
+            width: 100%;
+          }
+
+          .servicesContent{
+            padding: 10px;
+          }
+
+          .collectionItemsBox h2{
+            font-size: 1.5rem;
+          }
+          .sliderText{
+            font-size: 3rem;
+          }
+          .btnContainer{
+            width: 100%;
+          }
+          @media (max-width: 660px) {
+            .secondP, .firstP{
+              font-size: 1.2rem;
+            }
+            .textContainer, .collection>section {
+              width: auto;
+              height: auto;
+            }
+            .collectionItemsBox h2{
+              font-size: 1rem;
+            }
+            .frTop, .footerRight, .footerContainer, .footerContainer>section{
+              width: 100%;
+              height: auto;
+            }
+            .textContainer p{
+              font-size: 0.7rem;
+              color: white !important;
+            }
+
+            .textContainer h1{
+              color: white !important;
+              padding: 0;
+            }
+
+            .btnContainer{
+              padding: 0;
+            }
+
+            .sliderBtnFirst{
+              width: 35%; height: auto;
+            }
+
+            .sliderBtnSecond{
+              width: 35%; height: auto;
+            }
+
+            .loginCont{
+              width: 300px;
+              top: 25%
+            }
+
+            @media(max-width: 510px){
+              .scLeft, .scRight{
+              }
+              .sayTop{
+                font-size: 2rem;
+              }
+              .brandContainer{
+                flex-direction: column !important;
+                justify-content: space-around;
+              }
+              .brandContainer>div{
+                margin: 2%;
+              }
+              .brand{
+                height: auto; width: auto;
+              }
+              .sayCenter{
+                flex-direction: column;
+                align-items: center;
+              }
+              .say, .sayContainer{
+                height: auto;
+              }
+
+              .sayContainer h2{
+                justify-content: center;
+              }
+
+              .scRight, .scLeft{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+              }
+              .collectionItemsBox{
+                flex-direction: column;
+              }
+              .collectionMain{
+                flex-direction: column;
+              }
+              .colArrow{
+                transform: rotate(90deg);
+              }
+              .collectionItemsBox h2{
+                font-size: 2.5rem;
+              }
+              .servicesContent{
+                padding-bottom: 5%;
+              }
+              .frTop>div{
+                width: 100%;
+              }
+              .frTop input{
+                width: auto;
+              }
+              .loginCont{
+                top:0;
+                left: 0;
+              }
+              .header{
+                height: 150px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
